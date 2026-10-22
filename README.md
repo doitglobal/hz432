@@ -28,10 +28,15 @@ The script creates a virtual environment in `.venv` (if missing) and installs th
 `requirements.txt` into it — nothing goes into your system Python. It is safe to run again; it only installs
 what is missing. `.venv` is not part of the repository, so re-run the script after cloning or deleting it.
 
+**Windows without Python** — download `hz432-windows-x64.exe` from the
+[latest release](https://github.com/doitglobal/hz432/releases/latest) and run it from a console, e.g.
+`hz432-windows-x64.exe "C:\Music"`. The file is not code-signed, so Windows SmartScreen may warn on the first run.
+
 Alternatively, install it as a package (adds an `hz432` command):
 
 ```
-pip install .
+pip install hz432        # from PyPI
+pip install .            # from a clone of this repository
 ```
 
 ## Usage
