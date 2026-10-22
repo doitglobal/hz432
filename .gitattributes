@@ -1,0 +1,11 @@
+# Line ending normalization: LF in the repo, Windows scripts always CRLF.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Audio and images - binary
+*.mp3 binary
+*.wav binary
+*.flac binary
+*.png binary
+*.jpg binary

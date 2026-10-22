@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hz432"
+dynamic = ["version"]
+description = "Convert MP3 files (single file or whole folder trees) to A4 = 432 Hz tuning, measuring the original tuning first."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "DO IT GLOBAL LTD" }]
+requires-python = ">=3.10"
+dependencies = [
+    "pedalboard>=0.9",
+    "librosa>=0.10",
+    "mutagen>=1.47",
+    "numpy",
+]
+keywords = ["432hz", "audio", "mp3", "tuning", "pitch-shift", "music"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Multimedia :: Sound/Audio :: Conversion",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+hz432 = "hz432:main"
+
+[tool.setuptools]
+py-modules = ["hz432"]
+
+[tool.setuptools.dynamic]
+version = { attr = "hz432.__version__" }
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

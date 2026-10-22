@@ -1,0 +1,25 @@
+# environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# build / tools
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# audio and conversion output
+*.mp3
+out/
+
+# IDE / system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
