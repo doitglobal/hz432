@@ -25,7 +25,9 @@ Wymaga Pythona 3.10+ (python.org) i internetu przy pierwszym uruchomieniu. Na Wi
 - instaluje biblioteki z `requirements.txt` do `.venv` (nic nie trafia do systemowego Pythona),
 - przy kolejnych uruchomieniach tylko dociąga brakujące pakiety – można go odpalać bez obaw.
 
-Folder `.venv` nie jest w repozytorium. Po sklonowaniu repo, przeniesieniu na inny komputer albo usunięciu `.venv` wystarczy ponownie uruchomić skrypt. Alternatywnie: `pip install .` (dodaje polecenie `hz432`).
+Folder `.venv` nie jest w repozytorium. Po sklonowaniu repo, przeniesieniu na inny komputer albo usunięciu `.venv` wystarczy ponownie uruchomić skrypt. Alternatywnie: `pip install hz432` (z PyPI) albo `pip install .` w sklonowanym repo – dodaje polecenie `hz432`.
+
+**Windows bez Pythona**: pobierz `hz432-windows-x64.exe` z [najnowszego wydania](https://github.com/doitglobal/hz432/releases/latest) i uruchom z konsoli, np. `hz432-windows-x64.exe "C:\Muzyka"`. Plik nie jest podpisany cyfrowo, więc przy pierwszym uruchomieniu Windows SmartScreen może wyświetlić ostrzeżenie.
 
 ## Opcje
 Przydatne: `-o FOLDER`, `-j N` (wątki), `--mode pitch` (sama wysokość, tempo bez zmian – gdy potrzebna synchronizacja z wideo/tekstem), `--ref-hz 438` (wymuś znane strojenie), `--policy`.

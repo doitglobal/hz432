@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Release workflow: builds a standalone Windows executable (`hz432-windows-x64.exe`, attached to the release)
+  and publishes the package to PyPI.
+- `CODEOWNERS`; link to GitHub Discussions in the issue chooser.
+
 ## [1.0.0] - 2026-10-22
 
 ### Added
